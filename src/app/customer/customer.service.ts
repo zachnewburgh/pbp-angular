@@ -9,6 +9,7 @@ export class CustomerService {
 
 	constructor(private _http: Http) {}
 
+	// Ward's preferred method
 	getCustomers() {
 		return this._http.get(URL_CUSTOMER)
 			.map((response: Response) => response.json())

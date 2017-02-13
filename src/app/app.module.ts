@@ -5,8 +5,7 @@ import { HttpModule } from '@angular/http';
 import 'rxjs/Rx';
 
 import { AppComponent }  from './app.component';
-import { CustomerComponent } from './customer/customer.component';
-import { CustomersComponent } from './customer/customers.component';
+import { CustomerComponent, CustomersComponent } from './customer/index';
 
 @NgModule({
   imports:      [ 

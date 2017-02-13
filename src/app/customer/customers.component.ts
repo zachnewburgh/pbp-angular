@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { CustomerService } from './customer.service';
 import { Observable } from 'rxjs/Rx';
+
+import { CustomerService } from './index';
 
 @Component({
 	moduleId: module.id,
@@ -18,7 +19,7 @@ export class CustomersComponent implements OnInit {
 
 	ngOnInit() {
 
-		// Rx observable version
+		// Rx observable version with subscribe function to a customer array
 		this._customerService.getCustomers_RxObservable()
 			.subscribe(
 				(customers) => this.customers = customers,
